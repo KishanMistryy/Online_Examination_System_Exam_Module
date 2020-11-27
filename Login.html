@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css\mystyle.css">
+    <link rel="stylesheet" type="text/css" href="css\bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+         body
+        {
+            background: linear-gradient(#ADD8E6, #B6B6B4, #7FFFD4)fixed;
+        }
+        div {
+  
+}
+        </style>
+</head>
+
+<body>
+    <script>
+        function Setcookie()
+        {
+            if(document.getElementById("rem_check").checked==true)
+            {
+                document.cookie="username="+document.getElementById("username").value+";expires=Fri, 01 Jan 2021 23:59:59 UTC";;
+                document.cookie="password="+document.getElementById("password").value;
+                alert("Login Successfull");
+                location.replace("Examination_Login_Form.html");
+            }
+        }
+        window.onload=function()
+        {
+            if(document.cookie.length!=0)
+            {
+                var Allcookies,Temp;
+                Allcookies=document.cookie.split(";");   
+                for(var i=0;i<Allcookies.length;i++)
+                {
+                    Temp=Allcookies[i].split("=");
+                    if(Temp[0]=="username")
+                    {
+                        document.getElementById("username").value=Temp[1];
+                    }
+                    if(Temp[0]==" password")
+                    {
+                        document.getElementById("password").value=Temp[1];
+                    }
+                }
+            }
+        }
+    </script>
+    <center><h1 class="login-head">Examination Student Login</h1> </center>
+     <div>
+        <form>
+         <table class="login-table">
+            <tr>
+                <td>Student Id</td>
+                <td><input class="user" type="text" placeholder="Enter Username" id="username" name="uname" required></td>
+            </tr>
+            
+            <tr>
+                <td>
+                    Password
+                </td>
+                <td >
+                    <input type="password" placeholder="Enter Password" name="psw" id="password" required>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                        
+                    <input type="checkbox" id="rem_check" checked="checked" name="remember"> Remember me
+                </td>                
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="button" class="login-submit" onclick="Setcookie()">Login</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    </div>
+ 
+
+    
+</body>
+
+</html>

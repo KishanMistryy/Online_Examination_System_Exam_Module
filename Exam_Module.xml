@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Exam_Style.xsl"?>
+<Online_Examination_System xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="Exam_Schema.xsd">
+	<Student category="Mid_Semester">
+		<Name> Nirin MIstry</Name>
+		<Register_No>204101</Register_No>
+		<Marks>45</Marks>
+		<Subject>Webstack</Subject>
+	</Student>
+	<Student category="Mid_Semester">
+		<Name> Mehul Mistry</Name>
+		<Register_No>204102</Register_No>
+		<Marks>42</Marks>
+		<Subject>Webstack</Subject>
+	</Student>
+	<Student category="Mid_Semester">
+		<Name> Hensi Suthar</Name>
+		<Register_No>204103</Register_No>
+		<Marks>46</Marks>
+		<Subject>RDBMS</Subject>
+	</Student>
+	<Student category="Mid_Semester">
+		<Name> Kamal Naik</Name>
+		<Register_No>204104</Register_No>
+		<Marks>40</Marks>
+		<Subject>C Programming</Subject>
+	</Student>
+	<Student category="Mid_Semester">
+		<Name> Jaynam Shah</Name>
+		<Register_No>204105</Register_No>
+		<Marks>41</Marks>
+		<Subject>Science</Subject>
+	</Student>
+</Online_Examination_System>
