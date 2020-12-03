@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <title>Online Examination System</title>
+	<title>Online Examination System</title>
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 	<link rel="stylesheet" href="online_exam.css"/>
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -24,28 +25,46 @@
             </nav>
         </div>
     </header>
-
-    <section>
-
-		<div Align="CENTER">
-			<h2>List of Universities</h2>
-			<ol>
-				<li>CHRIST UNIVERSITY</li>
-				<li>BANGALORE UNIVERSITY</li>
-				<li>REVA UNIVERSITY</li>
-				<li>JAIN UNIVERSITY</li>
-			</ol>
-			 <h2>EXAMS TAKEN LIST</h2>
-			 <ol>
-				<li>C++</li>
-				<li>JAVA</li>
-				<li>C PROGRAMMING</li>
-			</ol>
+	
+    <section class="align_class">
+		 
+		<div>
+			<table class="table_style" id="table_1" ALIGN="CENTER" Border="2px solid black">
+				<tr BGCOLOR="#9acd32">
+					<th>Name</th>
+					<th>College Name</th>
+					<th>Course </th>
+					<th>Percentage</th>
+				</tr>
+				<script>
+					$(document).ready(function()
+					{
+						$.getJSON("Test_1.json", function(data)
+						{
+							var student='';
+							$.each(data, function(key,value)
+							{
+								student+='<tr>';
+								student+='<td>'+value.Student_Name+'</td>';
+								
+								student+='<td>'+value.College_Name+'</td>';
+								student+='<td>'+value.Course+'</td>';
+								student+='<td>'+value.Percentage+'</td>';
+								
+								student+='<tr>';                                
+							});
+							$('#table_1').append(student);
+						});
+					});
+				</script>
+			</table>
 		</div>
-		<div ALIGN="CENTER" >
-			<iframe width="1000" height="500" src="https://www.youtube.com/embed/p5qz-uFk1pA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</div>
-    </section>
+	
+	</section>
+	<div class="align_class" ALIGN="CENTER" >
+		<iframe width="1000" height="500" src="https://www.youtube.com/embed/p5qz-uFk1pA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+
     <footer class="footer">
         <table  class="td" width="100%"  cellspacing="0" cellpadding="0" >
 			<tr>

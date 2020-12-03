@@ -1,0 +1,32 @@
+[
+    {
+        "Student_Name":"Nirin Mistry",
+        "Percentage":"90",
+        "College_Name":"Christ University",
+        "Course":"M.Sc"
+    },
+    {
+        "Student_Name":"Kishan Mistry",
+        "Percentage":"89",
+        "College_Name":"Christ University",
+        "Course":"MCA"
+    },
+    {
+        "Student_Name":"Sohan Mistry",
+        "Percentage":"80",
+        "College_Name":"Gujarat University",
+        "Course":"MCA"
+    },
+    {
+        "Student_Name":"Mehul Mistry",
+        "Percentage":"75",
+        "College_Name":"Goa University",
+        "Course":"M.sc"
+    },
+    {
+        "Student_Name":"Ashok Mistry",
+        "Percentage":"90",
+        "College_Name":"Mumbai University",
+        "Course":"M.Sc DS"
+    }
+]

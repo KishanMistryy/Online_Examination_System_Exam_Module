@@ -77,4 +77,23 @@ nav > ul > li{
             padding-top: 5%;
             padding-bottom: 5%;
         }
+.align_class{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.table_style
+        {
+            text-align:center;
+            width:48%;
+           
+             
+        }
+td,th
+            {
+                font-size:larger;
+                padding:20px;
+                text-align:center !important;
+            }
          
